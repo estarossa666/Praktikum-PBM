@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_baru/gunshop_model.dart';
 
 
 class DetailPage extends StatelessWidget {
@@ -24,9 +23,9 @@ class DetailPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Card(
-            margin: EdgeInsets.only(top: 20),
+            margin: const EdgeInsets.only(top: 20),
             elevation: 0,
-            color: Color.fromRGBO(212, 155, 53, 1.0),
+            color: const Color.fromRGBO(212, 155, 53, 1.0),
             child: Container(
               height: 300,
               width: 300,
@@ -37,9 +36,9 @@ class DetailPage extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: Color.fromRGBO(212, 155, 53, 1.0),
+              color: const Color.fromRGBO(212, 155, 53, 1.0),
               borderRadius: BorderRadius.circular(16)
             ),
             child: Row(
@@ -48,10 +47,10 @@ class DetailPage extends StatelessWidget {
                 Column(
                   children: [
                     Text(title,
-                    style: TextStyle(fontFamily: ('Bebas'), fontSize: 30, color: Color.fromARGB(255, 0, 0, 0)),
+                    style: const TextStyle(fontFamily: ('Bebas'), fontSize: 30, color: Color.fromARGB(255, 0, 0, 0)),
                     ),
                     Text(deskripsi,
-                    style: TextStyle(fontFamily: ('Poppins'), fontSize: 15, color: Color.fromARGB(255, 0, 0, 0)),
+                    style: const TextStyle(fontFamily: ('Poppins'), fontSize: 15, color: Color.fromARGB(255, 0, 0, 0)),
                     )
                   ],
                 ),
@@ -60,15 +59,15 @@ class DetailPage extends StatelessWidget {
           ),
           ),
           ElevatedButton(
-            onPressed: () {}, 
-            child: const Text('PreOrder Now',
-            style: TextStyle( fontSize: 15, color: Colors.black),
-            ),
+            onPressed: () {},
             style: const ButtonStyle(
             backgroundColor: MaterialStatePropertyAll(Color.fromRGBO(212, 155, 53, 1.0))
+            ), 
+            child: const Text('PreOrder Now',
+            style: TextStyle( fontSize: 15, color: Colors.black),
             )
          ),
-         SizedBox(
+         const SizedBox(
           height: 20,
          )
         ],

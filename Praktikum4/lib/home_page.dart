@@ -49,23 +49,23 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder:(context) => const ListPage(),));}, 
-                    child: const Text('I am 21+ or older'),
+                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder:(context) => const ListPage(),));},
                     style: const ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll(Color.fromRGBO(212, 155, 53, 1.0)
                     )
-                  ),
+                  ), 
+                    child: const Text('I am 21+ or older'),
                 ),
                 const SizedBox(
                   width: 40,
                 ),
                   ElevatedButton(
-                    onPressed: () {}, 
-                    child: const Text('I am under 21'),
+                    onPressed: () {},
                     style: const ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll(Color.fromRGBO(212, 155, 53, 1.0))
                       )
-                    ,)
+                    , 
+                    child: const Text('I am under 21'),)
                   ],
                 ),
                 const SizedBox(

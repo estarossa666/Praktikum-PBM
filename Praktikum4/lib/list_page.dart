@@ -28,12 +28,12 @@ class ListPage extends StatelessWidget {
               child: ListTile(
                 title:
                   Text(gunshop.title,
-                  style: TextStyle(fontFamily: ('Bebas'), fontSize: 20, ),
+                  style: const TextStyle(fontFamily: ('Bebas'), fontSize: 20, ),
                   ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder:(context) => DetailPage(gambar: gunshop.gambar,title: gunshop.title,deskripsi: gunshop.deskripsi),));
               },
-              tileColor: Color.fromRGBO(212, 155, 53, 1.0),
+              tileColor: const Color.fromRGBO(212, 155, 53, 1.0),
               leading: InkWell(
                 onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context) => DetailPage(gambar: gunshop.gambar,title: gunshop.title,deskripsi: gunshop.deskripsi),));},
                 child: Container(
